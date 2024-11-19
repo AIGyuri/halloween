@@ -7,36 +7,63 @@
 	<link rel="stylesheet" href="index.css">
 </head>
 <body>
+	
+	<section>
+		<img src="pic/bg.jpg" id="bg">
+		<img src="pic/bats.png" id="bats">
+		<img src="pic/castle.png" id="castle">
+		<img src="pic/img.png" alt="witcher">
+		<img src="pic/wolf.png" id="wolf">
+	</section>
+	<div class="sec">
 
-	<header>
-		<h2 class="logo">Halloween</h2>
-		<nav class="navigation">
-			<a href="" class="active">Kezdőlap <span></span></a>
-			<a href="">Rolunk <span></span></a>
-			<a href="">Kínálat <span></span></a>
-			<a href="">Elérhetőség <span></span></a>
-		</nav>
-	</header>
+		<div class="content">
 
-	<!-- <section class="Halloween">
-		<h2 id="text">Halloween</h2>
-		<img src="pic/tree-left.png" id="tree-left">
-		<img src="pic/tree-right.png" id="tree-right">
-		<img src="pic/gate-left.png" id="gate-left">
-		<img src="pic/gate-right.png" id="gate-right">
-		<img src="pic/grass.png" id="grass">
-	</section> -->
+			<h2>Halloween</h2>
+			<p>Bár sokan azt hiszik, hogy a Halloween amerikai ünnep, ez nem igaz, ugyanis a kelta Samhainra vezethető vissza. Samhain azt jelenti: nyár vége, és a kelta naptár utolsó napját jelöli. A kelták úgy tartották, hogy ezen a napon az evilág és a túlvilág közötti határ  megnyílik, és a halottak, valamint a természetfeletti lények átjöhetnek az emberek közé. De erre ők egyáltalán nem vágytak. A tűz, a fáklyák és a töklámpás is azt a célt szolgálják, hogy elűzzék a rossz szellemeket, a holtakat. A mindenféle rémisztő maszkot és jelmezt is ugyanebből az okból érdemes magunkra ölteni: úgy tartották, hogyha Samhain idején legalább annyira borzasztó alaknak öltöznek, mint amit a szellemekről tartottak, azok azt hiszik majd, hogy ők is közülük valók, és nem bántják majd őket.
+
+			A kelta Samhain hagyományt az írek vitték Amerikába, így terjedt el ott. Egyébként kelták nem csupán Nagy-Britannia területén, hanem a mai Franciaország egyes részein, az Ibériai-félszigeten és Skandináviában is éltek, így eltérő formában, de ezeken a területeken mindig is létezett ez az ünnep. Mindenesetre előbb volt szokás Európában, mint az Újvilágban.
+				
+			A csontváznak, halottnak, ártó szellemnek öltözöttek egyik házról a másikra járnak, hogy ételt kérjenek, ahol pedig nem kapnak enni, azt a házat megátkozzák. Ezt a szokást a kelta ételáldozásra vezetik vissza: így akarták megkönnyíteni a halottak útját a túlvilágba. A magyar „csokit vagy csínyt”, esetleg “csokit vagy csalunk” az angol „trick or treat” megfelelője, és így kapcsolódik a nálunk is ismert halloweeni szokáshoz. A fekete macskát, pókot, boszorkányt, baglyot nem nagyon kell magyarázni, ezek ősidők óta a gonoszt, a rossz szellemet vagy annak kísérőjét jelképezik.</p>
+		</div>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script> -->
+
+	<script>
+		gsap.to("#witcher",{
+			scrollTrigger: {
+				scrub: 0.5,
+			},
+			x : 1500,
+			y : 500,
+		})
+
+		gsap.to("#wolf",{
+			scrollTrigger: {
+				scrub: 0.5,
+			},
+			x : 400,
+		})
 
 
-	<!-- <section class="content">
-		<h2>Rövid történet a halloweenről!</h2>
-		<p>
+		gsap.to("#castle",{
+			scrollTrigger: {
+				scrub: 0.5,
+			},
+			x : -100
+		})
 
-		</p>
-	</section> -->
-<!-- 
-	<footer class="footer">
 
-	</footer> -->
+		gsap.to("#bats",{
+			scrollTrigger: {
+				scrub: 0.5,
+			},
+			scale: 1.5,
+		})
+	</script>
 </body>
 </html>

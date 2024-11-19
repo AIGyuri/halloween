@@ -1,108 +1,59 @@
 @import url('https://fonts.googleapis.com/css2?family=Butcherman&family=Playfair:ital,opsz@0,5..1200;1,5..1200&display=swap');
 
 
-* {
+*{
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: 'Playfair', serif;
+	font-family: Playfair;
 }
 
-body {
-	min-height: 100vh;
-	overflow-x: hidden;
-	/* overflow-y: hidden; */
+body{
+	background: #0a0a0a;
 }
 
-header {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	padding: 30px 100px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	z-index: 100;
-	/* background-color: green; */
-}
-.logo {
-	font-size: 2em;
-	color: #fff;
-	user-select: none;
-	font-family: 'Butcherman', cursive;
-}
 
-.navigation a {
+section{
 	position: relative;
-	font-size: 1.1em;
-	color: #fff;
-	text-decoration: none;
-	margin-left: 20px;
-	font-weight: 600;
-	transition: .5s;
-	padding: 6px 15px;
-	transition: .5s;
-}
-
-
-
-.navigation a:hover,
-.navigation a.active {
-	color: #000;
-}
-
-
-.navigation a span {
-	position: absolute;
-	top: 0;
-	left: 0;
 	width: 100%;
-	height: 100%;
-	background-color: #fff;
-	border-radius: 30px;
-	z-index: -1;
-	transform:scale(0);
-	transition: 0.5s;
-}
-.navigation a:hover span,
-.navigation .active span {
-	transform: scale(1);
-	transition: transform 0.5s;
-}
-
-.Halloween {
-	position: relative;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	height: 100vh;
-	background: url("./pic/background.png") no-repeat;
-	background-size: cover;
-	background-position: center;
-	background-attachment: fixed;
-
-}
-#text{
-	color: #000;
-	font-size: 5em;
-	font-family: 'Butcherman', cursive;
-	position: absolute;
-	text-shadow: 8px 16px 20px #f9f9f9;
+	overflow: hidden;
 }
 
-.Halloween img {
+section::before{
+content: '';
+position: absolute;
+bottom: 0;
+width: 100%;
+height: 100px;
+background: linear-gradient(to top, #0a0a0a, transparent);
+z-index: 1000;
+
+}
+
+section img{
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 100%;
-	pointer-events: none;
+	max-width: 100%;
 }
 
-.Halloween img#gate-left {
-	transform: translateX(-282px);	
+.sec{
+	position: relative;
+	padding: 100px;
+	text-align: center;
 }
 
-.Halloween img#gate-right {
-	transform: translateX(305px);	
+.sec h2{
+	font-size: 5em;
+	color: #ff9425;
+	margin-bottom:20px;
+	font-family: Butcherman;
+}
+
+.sec p{
+	color: #ffffff;
+	font-size: 1.2em;
+	line-height: 1.5em;
+	font-family: consolas;
 }
